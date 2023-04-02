@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/login" method="POST">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+ body{ 
+     background:url("./hill.jpg") no-repeat center/cover;
+     } 
+.div1{
+     width:50%;
+     border: 1px solid rgb(29, 100, 207);
+     margin-left:auto;
+     margin-right:auto; 
+     background-color:white;
+     border-radius: 10px;
+     box-shadow: -5px -5px 9px  #3b56c4 ,3px 3px 7px #3b56c4;
+      box-sizing:inherit;
+     }
+</style>
+</head>
+<body>
+    <center><div class="div1">
+        <h2>Set a new Reminder</h2>
+        <form action="/setreminder" method="POST" >
+        <label for=""> Select a date :</label>
+        <input type="date" name="date"><br><br>
+        <label for=""> subject :</label>
+        <select  name="subject" id="subject" name="subject">
+        <option value="subject1">subject1</option>
+        <option value="subject2">subject2</option>
+        <option value="subject3">subject3</option>
+        </select><br><br>
+       
+        <label for=""> Reminders :</label>
+        <select  name="Reminder" id="Reminder" name="reminder">
+        <option value="rem1">rem1</option>
+        <option value="rem2">rem2</option>
+        <option value="rem3">rem3</option>
+
+        </select><br><br>
+      
+        <label for="" >Add description:</label> <input type="text" name="adddesc"><br><br>
+        <label for=""> <a href="./"></a> Email Address :</label>
+        <input type="text" name="email"><br><br>
+        <label for="">Contact No. :</label>
+        <input type="text" name="contact"><br><br>
+        <label for="">SMS No. :</label>
+        <input type="text" name="Sms"><br><br>
+        <label for="">Recur for next :</label>
+        <input type="text" name="recur"><br><br>
+        <!-- <button  onclick="">Back</button> &nbsp;  &nbsp; &nbsp; --->
+        <button style="background-color: rgb(28, 140, 184);" ><a href="./homepage.html">back</a></button>&nbsp; &nbsp;
+        <button style="background-color: rgb(28, 140, 184);" type="submit" id="submit" value="submit">confirm</button> <br>
+        </form>
+    </div></center>  
+</body>
+</html>

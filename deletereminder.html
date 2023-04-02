@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style type="text/css">
+        body{ 
+            background:url("./hill.jpg") no-repeat center/cover;
+       } 
+       .div1{
+           width:50%;
+           height:50%;
+           border: 1px solid rgb(29, 100, 207);
+           margin:0 auto;
+           background:white;
+           border-radius: 10px;
+           box-shadow: -5px -5px 9px  #3b56c4 ,3px 3px 7px #3b56c4;
+           padding: 100px;
+           box-sizing:inherit;
+       }
+</style>
+</head>
+<body>
+   
+       <center>
+
+  
+    <div class="div1">
+        <h2>Delete Reminder</h2>
+        <form action="/deletereminder" method="POST">
+        <label for=""> Select a date :</label>
+        <input type="date" name="date"><br><br>
+            <label for=""> subject :</label>
+            <select  name="subject" id="subject" >
+                <option value="subject1">subject1</option>
+                <option value="subject2">subject2</option>
+                <option value="subject3">subject3</option>
+            </select><br><br>
+                <label for=""> Reminders :</label>
+                <select  name="Reminder" id="Reminder" >
+                    <option value="rem6">rem1</option>
+                    <option value="rem2">rem2</option>
+                    <option value="rem3">rem3</option>
+                </select><br><br>
+        
+            <label for="" >Add description:</label> <input type="text"><br><br>
+            <button style="background-color: #4c61b3;"><a href="./homepage.html">Back</a></button>&nbsp;
+            <button style="background-color: #4e64bb;" type="submit">Submit</button>&nbsp;
+        
+        </form>
+        </center>
+        </body>
+        </html>
+
+
+
+
